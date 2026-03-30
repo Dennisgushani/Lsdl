@@ -3,52 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prayer Times App - Menden (Sauerland)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #111;
-            color: gold;
-            text-align: center;
-        }
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            margin: 0 0 20px 0;
-            font-size: 2.5em;
-        }
-        .prayer-time {
-            margin: 10px 0;
-            font-size: 1.5em;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            .prayer-time {
-                font-size: 1.2em;
-            }
-        }
-    </style>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Prayer Times - Menden (Sauerland)</h1>
-        <div class="prayer-time">Fajr: 05:30</div>
-        <div class="prayer-time">Dhuhr: 12:45</div>
-        <div class="prayer-time">Asr: 16:45</div>
-        <div class="prayer-time">Maghrib: 20:00</div>
-        <div class="prayer-time">Isha: 21:30</div>
-    </div>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section id="weather-info">
+            <h2>Current Weather</h2>
+            <div id="current-weather"></div>
+        </section>
+        <section id="forecast">
+            <h2>7-Day Forecast</h2>
+            <div id="forecast-info"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
